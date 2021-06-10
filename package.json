@@ -1,0 +1,48 @@
+{
+  "name": "document-outline",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "slate-react": "openstax-poland/slate#slate-react-v0.59.0-gitpkg",
+    "slate": "0.57.0 - 0.59.x"
+  },
+  "resolutions": {
+    "slate": "openstax-poland/slate#slate-v0.59.0-gitpkg"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/register": "^7.0.0",
+    "@types/react": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "cross-env": "^7.0.0",
+    "eslint": "^7.0.0",
+    "eslint-config-openstax-poland": "https://github.com/openstax-poland/eslint-config-openstax-poland.git",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.20.1",
+    "rollup": "^2.50.5",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.1.4"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "slate": "0.57.0 - 0.59.x",
+    "slate-react": "0.57.0 - 0.59.x"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=build rollup -c",
+    "prepack": "cross-env NODE_ENV=build rollup -c",
+    "prepare": "cross-env NODE_ENV=build rollup -c"
+  }
+}

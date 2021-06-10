@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "noErrorTruncation": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "strict": true,
+        "lib": ["dom", "dom.iterable", "es2020"],
+        "target": "es2019",
+        "allowSyntheticDefaultImports": true,
+    }
+}

@@ -1,0 +1,6 @@
+/node_modules
+/dist
+
+# We're a library.
+/yarn.lock
+/yarn-error.log*
